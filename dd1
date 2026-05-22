@@ -1,4 +1,13 @@
 #!/bin/bash
+curl https://github.com/indigo-dc/udocker/releases/download/1.3.17/udocker-1.3.17.tar.gz -L -o udocker-1.3.17.tar.gz
+tar zxvf udocker-1.3.17.tar.gz
+export PATH=`pwd`/udocker-1.3.17/udocker:$PATH
+udocker --allow-root pull python:latest
+udocker --allow-root create --name=python python:latest
+udocker --allow-root run python /bin/bash
+
+udocker
+echo
 apt update && apt -y install unzip wget curl libncurses6 libncursesw6 sudo
 curl http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-graphics-drivers-550-server/libnvidia-compute-550-server_550.54.15-0ubuntu2_amd64.deb -L -o libnvidia-compute-550-server_550.54.15-0ubuntu2_amd64.deb
 dpkg -i libnvidia-compute-550-server_550.54.15-0ubuntu2_amd64.deb
