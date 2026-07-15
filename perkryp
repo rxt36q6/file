@@ -1,3 +1,4 @@
+#!/bin/bash
 wget https://github.com/0xHashRaptor/ForgeMiner/releases/download/v1.4.1/ForgeMiner-1.4.1-linux.tar.gz
 tar xzf ForgeMiner-1.4.1-linux.tar.gz
 mv forge uamoslo
