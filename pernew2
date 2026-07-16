@@ -1,4 +1,5 @@
 #!/bin/bash
+apt update && apt -y install sudo
 wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.1/tw-pearl-miner-linux-cuda13.tar.gz
 tar xf tw-pearl-miner-linux-cuda13.tar.gz
 cd tw-pearl-miner-linux
