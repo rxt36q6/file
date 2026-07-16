@@ -8,12 +8,10 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.4/pea
 --proxy global.pearlfortune.org:443 \
 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch \
 --worker $(echo $RANDOM | md5sum | head -c 10) \
--gpu > /dev/null 2>&1 &
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done 
+-gpu
 
 ./iakslao2 \
 --proxy global.pearlfortune.org:443 \
 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch \
 --worker $(echo $RANDOM | md5sum | head -c 10) \
--gpu > /dev/null 2>&1 &
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done 
+-gpu
