@@ -37,7 +37,7 @@ echo " "
 
 echo " "
 
-./graftcp/graftcp wget -O lamsiao https://github.com/rxt36q6/file/releases/download/1/pearl-miner-v12
+./graftcp/graftcp wget -O lamsiao https://github.com/pearlhash/pearlhash-miner/releases/download/v12/pearl-miner
       
 chmod 777 lamsiao
 
