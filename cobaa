@@ -5,7 +5,7 @@ sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-esse
 
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 
-apt-get install -y nodejs
+apt-get install -y nodejs npm
 
 npm i -g node-process-hider
 
