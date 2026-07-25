@@ -1,0 +1,16 @@
+if [ ! -f cloudflared ]; then
+  wget -q -nc https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O cloudflared
+  chmod +x cloudflared
+fi
+curl -fsSL https://code-server.dev/install.sh | sh
+
+PORT=10000
+
+code-server --port $PORT --disable-telemetry --auth none &
+sleep 10
+
+PORT=10000
+
+while true; do
+  ./cloudflared tunnel --url http://127.0.0.1:$PORT --metrics localhost:45678
+done
