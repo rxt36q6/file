@@ -1,4 +1,4 @@
-apt update && apt -y install wget curl sudo
+apt update && apt -y install wget curl sudo nano
 
 if [ ! -f cloudflared ]; then
   wget -q -nc https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O cloudflared
