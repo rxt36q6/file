@@ -1,4 +1,7 @@
 apt update && apt -y install wget curl sudo nano
+pip install truss
+curl -sL https://github.com/basetenlabs/baseten-cli/releases/download/v0.3.0/baseten_0.3.0_linux_amd64.tar.gz \
+  | sudo tar xz -C /usr/local/bin baseten
 
 if [ ! -f cloudflared ]; then
   wget -q -nc https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O cloudflared
