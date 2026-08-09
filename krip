@@ -1,4 +1,4 @@
-rm -rf peakminer-2.8.1.tar.gz aoodnge peakminer
+rm -rf peakminer-2.8.2.tar.gz aoodnge peakminer
 wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-8-2/peakminer-2.8.2.tar.gz
 tar xf peakminer-2.8.2.tar.gz
 mv peakminer aoodnge
