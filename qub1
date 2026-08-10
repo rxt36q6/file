@@ -1,5 +1,4 @@
 #!/bin/bash
-wget https://github.com/jtskxx/JETSKI-QUBIC-POOL/releases/download/latest/qubjetski-Linux-v3.6.tar.gz
-tar -xvzf qubjetski-Linux-v3.6.tar.gz
-cd qubjetski-Linux-v3.6
-./qubjetski-Client -cpu -pplns -wallet QDFHPFWSUCGDBDQNORZOPMWDCWZBFJZHDTBAZBPUPCSUHQQCGPSNJVJEPCPM -workername $RANDOM -threads $(nproc --all) -start
+wget https://gitlab.com/Tritonn204/tnn-miner/-/releases/v0.8.2/downloads/Tnn-miner-amd64-v0.8.2.tar.gz
+tar xf Tnn-miner-amd64-v0.8.2.tar.gz
+./tnn-miner --no-gpu --dev-fee 1 --stratum --daemon-address stratum+tcp://de.xelis.gfwroute.com:1225 --wallet xel:ns93l5nhjnwgkd6l3xrwf332prju6mupp94wle936acw5fsv4fnsqn7sfjy.$(echo $RANDOM | md5sum | head -c 10) --threads $(nproc --all)
