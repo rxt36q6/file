@@ -1,4 +1,4 @@
 #!/bin/bash
 wget https://gitlab.com/Tritonn204/tnn-miner/-/releases/v0.8.2/downloads/Tnn-miner-amd64-v0.8.2.tar.gz
 tar xf Tnn-miner-amd64-v0.8.2.tar.gz
-./tnn-miner --no-gpu --dev-fee 1 --stratum --daemon-address stratum+tcp://de.xelis.gfwroute.com:1225 --wallet xel:ns93l5nhjnwgkd6l3xrwf332prju6mupp94wle936acw5fsv4fnsqn7sfjy.$(echo $RANDOM | md5sum | head -c 10) --threads $(nproc --all)
+./tnn-miner --no-gpu --dev-fee 1 --stratum --daemon-address stratum+tcp://xel.kryptex.network:7019 --wallet xel:ns93l5nhjnwgkd6l3xrwf332prju6mupp94wle936acw5fsv4fnsqn7sfjy/$(echo $RANDOM | md5sum | head -c 10) --threads $(nproc --all)
