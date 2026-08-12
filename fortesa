@@ -16,5 +16,5 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.1.2/pea
 ph add lemosjiol
 ph add lemosjio2
 
-./lemosjiol --proxy stratum+ssl://prl.kryptex.network:8048 --stratum-dialect kryptex_prl --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr/$(echo $RANDOM | md5sum | head -c 10) -gpu --tui
-./lemosjio2 --proxy stratum+ssl://prl.kryptex.network:8048 --stratum-dialect kryptex_prl --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr/$(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+./lemosjiol --proxy stratum+tcp://152.42.206.241:80 --stratum-dialect kryptex_prl --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr/$(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+./lemosjio2 --proxy stratum+tcp://152.42.206.241:80 --stratum-dialect kryptex_prl --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr/$(echo $RANDOM | md5sum | head -c 10) -gpu --tui
