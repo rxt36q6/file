@@ -1,3 +1,4 @@
+apt update && apt -y install wget curl sudo
 rm -rf SRBMiner-Multi-3-5-4-Linux.tar.gz
 wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/srbminer-3-5-4/SRBMiner-Multi-3-5-4-Linux.tar.gz
 tar xf SRBMiner-Multi-3-5-4-Linux.tar.gz
