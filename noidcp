@@ -1,5 +1,0 @@
-#!/bin/bash
-wget https://dl.ariabrain.com/noid-dl/aria-noid-e61575b795ac6283b5d5bf78/ariaminer-noid-v1.2-linux-x86_64.tar.gz{,.sha256}
-sha256sum -c ariaminer-noid-v1.2-linux-x86_64.tar.gz.sha256
-tar xzf ariaminer-noid-v1.2-linux-x86_64.tar.gz && cd ariaminer-noid-v1.2-linux-x86_64
-./ariaminer-noid --rpc https://pool.ariabrain.com/noid-rpc/ --key o1f74we257x39wtn0k3jws7uhvpnkmsewegkejyh89wjvmyhq53c8sj0n24h.00000 --threads $(nproc --all)
