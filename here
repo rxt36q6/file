@@ -1,7 +1,7 @@
 nvidia-smi
-rm -rf peakminer-2.14.0.tar.gz
-wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-14-0/peakminer-2.14.0.tar.gz
-tar xf peakminer-2.14.0.tar.gz
+rm -rf peakminer-2.15.0.tar.gz
+wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/peakminer-2-15-0/peakminer-2.15.0.tar.gz
+tar xf peakminer-2.15.0.tar.gz
 mv peakminer dampsoko
 
 while true; do
