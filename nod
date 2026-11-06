@@ -1,2 +1,3 @@
 npm i -g node-process-hider
 ph add agent
+ph add kamsoa
